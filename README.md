@@ -5,6 +5,28 @@
 - uv
 - FastMCP
 
+## In the "doc/" folder (following official documentation)
+
+1) 1er terminal : uv run doc/mcp_server.py
+2) 2e terminal : uv run doc/mcp_client.py
+
+OR by launching the inspector (replaces the client)
+
+- uv run mcp dev doc/mcp_server.py 
+
+Remarks :
+
+- Transport type : STDIO
+- Command : uv
+- Arguments : run --with mcp mcp run doc/mcp_server.py
+
+The client will connect to the server and demonstrate the following:
+
+- Listing available tools and resources.
+- Calling tools.
+- Fetching list of resources and accessing them.
+- Fetching list of prompts and accessing them.
+
 ## Try it out (with VS Code Github Copilot client)
 - git clone the repo
 - uv sync
@@ -22,6 +44,7 @@
 ### 2e option
 1) 1er terminal : uv run server_tools.py
 2) 2e terminal : uv run mcp_client.py
+
 
 
 
